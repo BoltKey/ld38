@@ -1,0 +1,33 @@
+Ludum Dare 38! Yay!
+
+12.5 hours in, I start. I was busy saturday morning, but I managed to come up with an idea for a game.
+
+I recently got quite excited about colonization of our solar system, terraformation and stuff. So that will be kinda also the game. I was thinking about the theme in the way that our Earth is too small for us, and out world will be just a little dot in the grand scheme of things. That is my interpretation...
+
+My idea is this: year 23xx. Earth is becoming unsuitable for life. It is finally time to move on. Yeah, it is really cliche, but I don't care.
+
+Anyway. It will be a turn based strategy game. Every turn, the planets are each in various distances from earth, and sometimes it is better to go for some planets than others. Before inhabiting a planet, you first need to terraform it. In each turn (which will be like 10 earth years), you can send something to other planets, reduce pollution of the planet, or make the new tech on a new planet (which will pretty much be only the ability to send humans and terra-morf-trons (TMT)). You can also research tech to send more humans or TMTs at once.
+
+Each turn, each planet produces some people, resources and pollution. Pollution reduces production of everything but pollution (by that much percent).
+
+It is coming together really nicely. It is an ambitious project, but I think I can put it together quite fast. I already have everything planned out, so I think it could work.
+
+Precious planning will be needed for this project. I need to make it so I can ship it with just some of the features. Because, well, roadblocks do happen...
+
+So yeah. I am hoping to get the core mechanics working before midnight today. It will be just bare prototype, but with all the mechanics in final form. Hopefully. Then, I will have enough time for graphics, story, tutorial (big deal in this kind of game), balancing and polish. I plan one game to be about perhaps 150 turns. We'll see.
+
+I am excited about this game and truly believe it will work out well. I don't have any backup plans this time (yet)...
+
+Starting 15:18 after the start of the jam. Let's do this!
+
+I just found out (thanks to Google) that today is the Earth Day. What a happy little coincidence!
+
+Ok. Let's make the prototype.
+
+22.5 hours in. I have first working playabe prototype. Just before midnight. I love to make the deadlines just in time. Now, I just have to play with the parameters to make it FUN! And tomorrow, let's do a good tutorial first, and then polish and keep polishing. I like it a lot so far. I was in the back of my head worried that I would not like it, or I would start to hate it as soon as I finish it, but it didn't happen yet. Now, I am just too far to start over. Seriously.
+
+Oh, and atmospheric soundtrack for deving helps like freaking lot. I wish I could make similar music in short time, because some ambient spacey music would add SO much to my game.
+
+I changed my mind. This is just too boring. To make a turn based game entertaining, so much effort and balancing is needed.
+
+I will seque it into a fast paced game where you pew pew either terramorfing or people packets into the space and the planets then attract it. You must avoid hitting it into the sun. No pollution or anything. The bigger the planet, the more terramorfing packets it needs. Ok, let's do it. I spent last 4 hours on nothing. I mean. On finding out the wrong ways.

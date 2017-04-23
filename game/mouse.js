@@ -1,16 +1,36 @@
-function click(right) {
-	var speedx = (divPos.x - earth.pos()[0]) * .01;
-	var speedy = (divPos.y - earth.pos()[1]) * .01;
-	var packetCost = Math.distance([0, 0], [speedx, speedy]) * 10 + 100;
-	if (resources >= packetCost) {
-		resources -= packetCost;
-		if (right) {
-			packets.push(new Packet(true, speedx, speedy));
-			earth.pop -= 500;
+function click() {
+	if (timer < tInterval * script.length) {
+		timer += tInterval;
+		timer -= timer%tInterval;
+		console.log(timer);
+		return;
+	}
+	else if (gameEnd) {
+		if (timer - gameEnd > 50) {
+			restart();
 		}
-		else {
-			packets.push(new Packet(false, speedx, speedy));
-		}
+		return;
+	}
+	if (earth.pop > 100)
+		earth.pop = 100;
+	var speedx = (divPos.x - earth.pos()[0]) * .03;
+	var speedy = (divPos.y - earth.pos()[1]) * .03;
+	if (Math.abs(speedx) > 3) {
+		var r = Math.abs(speedx / 3);
+		speedx /= r;
+		speedy /= r;
+	}
+	if (Math.abs(speedy) > 3) {
+		var r = Math.abs(speedy / 3);
+		speedx /= r;
+		speedy /= r;
+	}
+	if (earth.pop > 1) {
+		earth.pop -= 1;
+		packets.push(new Packet(speedx, speedy, earth.packet.dest));
+		var r;
+		do {r = Math.floor(Math.random() * planets.length)} while (r === planets.indexOf(earth));
+		earth.packet.dest = r;
 	}
 }
 function drop() {

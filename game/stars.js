@@ -30,6 +30,6 @@ function updateStars() {
 		}
 	}
 	if (Math.random() < 0.1) {
-		stars.push({x: canvas.width / 2 + (Math.random() - .5) * 20, y: canvas.height / 2 + (Math.random() - .5) * 20, r: Math.random()  })
+		stars.push({x: canvas.width / 2 + (Math.random() - .5) * 200, y: canvas.height / 2 + (Math.random() - .5) * 200, r: Math.random() * .1  })
 	}
 }

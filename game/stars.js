@@ -14,3 +14,22 @@ function drawStars() {
 		ctx.fill();
 	}
 }
+
+function updateStars() {
+	for (var i = 0; i < stars.length; ++i) {
+		var s = stars[i];
+		var s1 = (s.x - canvas.width / 2) * 0.01;
+		var s2 = (s.y - canvas.height / 2) * 0.01;
+		s.x += s1;
+		s.y += s2;
+		s.r += (Math.distance([0, 0], [s1, s2])) * 0.01;
+		
+		if (s.x > canvas.width + 20 || s.x < -20 || s.y > canvas.height + 20 || s.y < -20) {
+			stars.splice(i, 1);
+			--i;
+		}
+	}
+	if (Math.random() < 0.1) {
+		stars.push({x: canvas.width / 2 + (Math.random() - .5) * 20, y: canvas.height / 2 + (Math.random() - .5) * 20, r: Math.random()  })
+	}
+}

@@ -14,7 +14,5 @@ foreach (glob("game/*.js") as $filename)
 <script> var logo; window.onload = function(){window.logo = BKLogo(main)}; </script>
 </head>
 <body style="margin: 0">
-<div id='wrap'>
-<canvas style="background-color:#000000;" class="unselectable" id="game" draggable="false" align="center" width="500" height="400">Your browser does not support canvas. Use Chrome instead.</canvas>
-</div>
+<canvas style="background-color:#000000;" class="unselectable" id="game" draggable="false" align="center" width="500" height="500">Your browser does not support canvas. Use Chrome instead.</canvas>
 </body>
